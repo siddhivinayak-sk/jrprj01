@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BlobExample_mysql" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d978dab3-2ee3-486f-b62c-7e6817ee39da">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     company_info.`id` AS company_info_id,
+     company_info.`name` AS company_info_name,
+     company_info.`address` AS company_info_address,
+     company_info.`city` AS company_info_city,
+     company_info.`state` AS company_info_state,
+     company_info.`country` AS company_info_country,
+     company_info.`logo` AS company_info_logo
+FROM
+     `company_info` company_info]]>
+	</queryString>
+	<field name="company_info_id" class="java.lang.Integer"/>
+	<field name="company_info_name" class="java.lang.String"/>
+	<field name="company_info_address" class="java.lang.String"/>
+	<field name="company_info_city" class="java.lang.String"/>
+	<field name="company_info_state" class="java.lang.String"/>
+	<field name="company_info_country" class="java.lang.String"/>
+	<field name="company_info_logo" class="java.awt.Image"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="79" uuid="62a3d085-cb3f-4cb0-9d4b-869182d00560"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["MySQL Blob Example"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="166" splitType="Stretch">
+			<textField>
+				<reportElement x="46" y="0" width="161" height="20" uuid="7bff9ef5-e038-4621-980c-83717174da58"/>
+				<textFieldExpression><![CDATA[$F{company_info_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="20" width="161" height="20" uuid="65395f95-a2f0-40c3-ad94-48ee275d9e27"/>
+				<textFieldExpression><![CDATA[$F{company_info_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="40" width="161" height="20" uuid="4a8cb4a7-e9f0-41d2-91c0-c88ec28731f3"/>
+				<textFieldExpression><![CDATA[$F{company_info_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="60" width="161" height="20" uuid="571bdce4-3042-46fe-9fd0-a117592629e5"/>
+				<textFieldExpression><![CDATA[$F{company_info_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="80" width="161" height="20" uuid="045ff86b-c6e5-43cb-ac8e-9009648e8f08"/>
+				<textFieldExpression><![CDATA[$F{company_info_state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="100" width="161" height="20" uuid="21a5168b-8c0e-4993-88b3-2a7bd64e19e8"/>
+				<textFieldExpression><![CDATA[$F{company_info_country}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="244" y="0" width="120" height="120" uuid="9b2798da-ca28-4aeb-a8de-8299718c3e40"/>
+				<imageExpression><![CDATA[$F{company_info_logo}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<summary>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="50" uuid="60c7f65c-d40f-495f-b433-d393c703da42"/>
+				<text><![CDATA[In MySQL, I used the blob data type to store the image. The UG says to set the image field to java.awt.Image, and the expression class to the same, and that works.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

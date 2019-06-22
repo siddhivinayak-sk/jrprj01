@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>DA1</name><driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver><username>sa</username><password>p@ssw0rd</password><savePassword>true</savePassword><url>jdbc:sqlserver://localhost:1433;DatabaseName=sample</url><database></database><serverAddress></serverAddress><classpath>C:\sandeep\code\SQLServer\sqljdbc42.jar</classpath></jdbcDataAdapter>

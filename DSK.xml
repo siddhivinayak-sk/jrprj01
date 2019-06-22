@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>DerbySK</name><driver>org.apache.derby.jdbc.ClientDriver</driver><username>user</username><password>app</password><savePassword>true</savePassword><url>jdbc:derby://localhost:1527/sample</url><database></database><serverAddress></serverAddress><classpath>C:\Users\kumar-sand\.m2\repository\org\apache\derby\derbyclient\10.14.2.0\derbyclient-10.14.2.0.jar</classpath></jdbcDataAdapter>

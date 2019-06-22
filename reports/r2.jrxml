@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="r2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f636d4c2-2f92-4c88-93ff-1d97d3902b88">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SSDA.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="background.image.path" value="C:\sandeep\page.png"/>
+	<parameter name="tid" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT 
+TID,
+DEL_AT,
+DEL_METHOD,
+DEL_BY,
+DEL_TO,
+DEL_ADDRESS,
+DEL_PIN,
+OUR_REF,
+YOUR_REF,
+MISC_REF,
+CHEQUE_NO,
+DEL_DATE,
+DRAWN_ON,
+PAYABLE_AT,
+AMT ,
+CUSTOMER_DET,
+BANK_REF,
+CHK_DATE,
+PAY_TO,
+AMT_WORDS,
+AMT_NUMBER,
+AC_NO,
+BD_CODE,
+AUTH_SIGN1,
+AUTH_SIGN2,
+MICR_LINE,
+A_SIGN_IC1 ,
+A_SIGN_IC2 ,
+C_LOGO1 ,
+C_LOGO2 
+FROM 
+SPF_DETAILS
+WHERE
+TID = $P{tid}]]>
+	</queryString>
+	<field name="TID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="TID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_AT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_AT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_METHOD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_METHOD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_BY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_BY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_TO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_TO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_ADDRESS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_ADDRESS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_PIN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_PIN"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="OUR_REF" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="OUR_REF"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="YOUR_REF" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="YOUR_REF"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="MISC_REF" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="MISC_REF"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="CHEQUE_NO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CHEQUE_NO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DEL_DATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DEL_DATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="DRAWN_ON" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DRAWN_ON"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="PAYABLE_AT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="PAYABLE_AT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="AMT" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="AMT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="CUSTOMER_DET" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CUSTOMER_DET"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="BANK_REF" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="BANK_REF"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="CHK_DATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CHK_DATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="PAY_TO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="PAY_TO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="AMT_WORDS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="AMT_WORDS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="AMT_NUMBER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="AMT_NUMBER"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="AC_NO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="AC_NO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="BD_CODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="BD_CODE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="AUTH_SIGN1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="AUTH_SIGN1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="AUTH_SIGN2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="AUTH_SIGN2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="MICR_LINE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="MICR_LINE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="A_SIGN_IC1" class="java.io.InputStream">
+		<property name="com.jaspersoft.studio.field.label" value="A_SIGN_IC1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="A_SIGN_IC2" class="java.io.InputStream">
+		<property name="com.jaspersoft.studio.field.label" value="A_SIGN_IC2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="C_LOGO1" class="java.sql.Blob">
+		<property name="com.jaspersoft.studio.field.label" value="C_LOGO1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<field name="C_LOGO2" class="java.sql.Blob">
+		<property name="com.jaspersoft.studio.field.label" value="C_LOGO2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="SPF_DETAILS"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="300" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="225">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement key="S:RectangleBox-1" mode="Transparent" x="5" y="49" width="519" height="171" uuid="2cab7bd5-0663-4549-94d8-42246704bc83">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement key="ST:Delivery At" x="8" y="53" width="60" height="15" uuid="00d7c5f0-3524-455c-9b3e-83d3b9d8d4ff"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delivery At:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Method" x="6" y="66" width="40" height="15" uuid="fc381faa-97d5-4b91-abfe-e6602cc2a687"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Method:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:By" x="8" y="78" width="20" height="15" uuid="0eb4bcc5-cd59-4918-8775-47c441c963fe"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[By:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:To" x="9" y="121" width="20" height="15" uuid="0ac493ac-7146-4536-90cb-a7c091fed0a3"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[To:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Address" x="6" y="158" width="49" height="15" uuid="afca9b32-ab4d-4b34-8465-e4c8538b31c7"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Pin" x="6" y="203" width="24" height="15" uuid="4a94a6e2-4a26-4a43-a8a0-605d2d15b3a7"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pin:]]></text>
+			</staticText>
+			<line>
+				<reportElement key="SL:Line" x="307" y="49" width="1" height="171" uuid="0cda2879-5125-4728-83a3-fa270ee55edb"/>
+			</line>
+			<staticText>
+				<reportElement key="ST:Our Ref" x="322" y="54" width="41" height="15" uuid="ebeec16c-6d16-47dd-8f49-1ed79cf8ff98"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Our Ref:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Your Ref" x="318" y="67" width="46" height="15" uuid="652a86db-e479-4694-afd6-3b0100f73f7d"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Your Ref:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Misc Ref" x="318" y="81" width="45" height="15" uuid="01a548e0-2e4c-4518-8e8f-f8d16336f030"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Misc Ref:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Cheque No" x="309" y="101" width="57" height="15" uuid="06e5cc20-bd86-439e-bf6e-0c5b207d5be1"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cheque No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Date" x="398" y="100" width="64" height="15" uuid="25b04cc1-a602-4086-8f85-edc7ae51c857"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Drawn On" x="313" y="116" width="51" height="15" uuid="8cf30b03-7e67-4840-910f-faf276383826"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Drawn On:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Payable At" x="310" y="142" width="55" height="15" uuid="b834644a-0d5f-488a-b523-03bc0a3b0d6b"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payable At:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Amount" x="321" y="157" width="43" height="15" uuid="bce70170-ef1b-414f-880c-b99f537ca2ba"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Customer" x="314" y="170" width="52" height="15" uuid="07bf6f38-80e7-4bbe-a087-6297dbd1fccb"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Bank Ref" x="317" y="189" width="49" height="21" uuid="dab96672-4e9d-480e-b089-29b2863c1cb1"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bank Ref:]]></text>
+			</staticText>
+			<textField>
+				<reportElement key="F:DEL_AT" x="53" y="53" width="122" height="15" uuid="7a0cd842-bd98-4a1f-a2c0-ff5363d11064"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_AT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DEL_METHOD" x="38" y="66" width="137" height="15" uuid="acab1fb5-5bca-4e7a-a431-d71857ac9161"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_METHOD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DEL_BY" x="23" y="78" width="152" height="37" uuid="94c653db-c3d1-4a50-bf6e-78b37a2cfafd"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_BY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DEL_TO" x="23" y="121" width="152" height="36" uuid="240ccd7b-df19-4891-a18a-70130fa7b923"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_TO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DEL_ADDRESS" x="46" y="158" width="129" height="45" uuid="359f8490-94fa-4aeb-a1a0-9ec407cc12f3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_ADDRESS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:OUR_REF" x="358" y="54" width="122" height="15" uuid="db8e85af-58b3-4b37-b1a8-bc9356697ba1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OUR_REF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:YOUR_REF" x="358" y="67" width="122" height="15" uuid="48457013-0030-4e74-9f77-60a75cb6b5e6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{YOUR_REF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:MISC_REF" x="358" y="81" width="122" height="15" uuid="0ffdd122-e3a1-413b-b1e3-037f1021d68e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MISC_REF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHEQUE_NO" x="357" y="101" width="56" height="15" uuid="acbafee9-6bc5-4ae9-8307-e7fcfe2d1c37"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CHEQUE_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DRAWN_ON" x="357" y="116" width="122" height="26" uuid="459a9c71-49a9-433f-961e-9c247d9a6df0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DRAWN_ON}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:PAYABLE_AT" x="357" y="142" width="122" height="15" uuid="2dc5f509-d4c1-4fbc-a083-ffc0af7b85d8"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PAYABLE_AT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:AMT" x="357" y="157" width="122" height="15" uuid="5ac206e6-ade3-4b33-8c6c-4cc5237fd284"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AMT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CUSTOMER_DET" x="357" y="170" width="122" height="23" uuid="a852e7a0-1975-41d9-8fa9-13d22b3054a9"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CUSTOMER_DET}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:BANK_REF" x="357" y="189" width="83" height="31" uuid="db13594a-ed99-4059-a47c-bf04c5fe0934"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BANK_REF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DEL_DATE" x="420" y="100" width="92" height="15" uuid="645026e4-b5bb-4d50-b443-17c48918c4de"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:DEL_PIN" x="27" y="208" width="153" height="15" uuid="66ca5fd8-9db2-4911-86ca-ae41b2bcf8c2"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEL_PIN}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="302">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement key="F:PAY_TO" x="46" y="86" width="434" height="19" uuid="d9773907-351f-4acc-958b-52adaa799268"/>
+				<textElement>
+					<font fontName="Mistral" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["***" + $F{PAY_TO}.trim() + "***"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:AMT_WORDS" x="45" y="111" width="318" height="39" uuid="d49bfbfc-1ccb-4ffe-8147-006c0de0ff4a"/>
+				<textFieldExpression><![CDATA["***" + $F{AMT_WORDS}.trim() + "***"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:AMT_NUMBER" x="429" y="130" width="126" height="19" uuid="af84f6fa-285f-468c-aee7-9bed5cd72d54"/>
+				<textFieldExpression><![CDATA["***" + $F{AMT_NUMBER}.trim() + "***"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:BANK_REF" x="272" y="154" width="83" height="31" uuid="d367f696-2959-4161-8c6a-bed01d20f45b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BANK_REF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:AC_NO" x="282" y="232" width="72" height="19" uuid="6b761e73-414f-49f1-a673-1b1404be6e44"/>
+				<textFieldExpression><![CDATA[$F{AC_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:BD_CODE" x="53" y="150" width="83" height="19" uuid="d1201126-6e06-4704-b1ff-fc9f044ffb94"/>
+				<textFieldExpression><![CDATA[$F{BD_CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:AUTH_SIGN1" x="358" y="220" width="82" height="12" uuid="5f1f4ba9-68f9-40c5-8385-8086aa134a33"/>
+				<textElement>
+					<font fontName="Harlow Solid Italic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AUTH_SIGN1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:AUTH_SIGN2" x="450" y="220" width="82" height="12" uuid="83e38f7b-a30c-4a19-8af9-2426a48218bf"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AUTH_SIGN2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="ST:Authorised Signatory" x="358" y="228" width="82" height="15" uuid="4211b803-fadd-4b8a-8644-2c92cb346bc6"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Authorised Signatory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="ST:Authorised Signatory" x="447" y="228" width="82" height="15" uuid="27471525-5589-478e-90b7-877c096170f5"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Authorised Signatory]]></text>
+			</staticText>
+			<image>
+				<reportElement key="F:A_SIGN_IC1" x="362" y="183" width="73" height="34" uuid="8ea16b0a-46f9-43c3-abfa-8ba9c573c9dc"/>
+				<imageExpression><![CDATA[$F{A_SIGN_IC1}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement key="F:A_SIGN_IC2" x="454" y="185" width="73" height="34" uuid="38ca7239-9038-44e8-b67d-32a321d938a7"/>
+				<imageExpression><![CDATA[$F{A_SIGN_IC2}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement key="F:MICR_LINE" x="50" y="193" width="276" height="19" uuid="12544029-93b0-47d1-b8a3-ee1044f31cfc"/>
+				<textElement>
+					<font fontName="Harlow Solid Italic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MICR_LINE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE0" x="426" y="41" width="9" height="14" uuid="e15a1def-e0e3-4f0a-b753-2f65042ab69a"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 0 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE1" x="438" y="41" width="9" height="14" uuid="3d334201-063f-4234-aeac-4c4e5bf96a9b"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 1 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE2" x="449" y="41" width="9" height="14" uuid="c220e143-7471-469f-b10b-6fac8d746138"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 3 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE3" x="459" y="41" width="9" height="14" uuid="6a9ca0e6-55e5-49d4-8d73-0cb135c2fe19"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 4 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE4" x="472" y="41" width="9" height="14" uuid="1f27244b-094e-4a5f-85a0-7215137f4a5b"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 6 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE5" x="482" y="41" width="9" height="14" uuid="0edfc417-f85f-4dd6-b5c2-2eb9c52f34e2"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 7 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE6" x="493" y="41" width="9" height="14" uuid="4e36a3b2-4acc-4700-a7c0-a3ee7a50ac2c"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 8 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="F:CHK_DATE7" x="505" y="41" width="9" height="14" uuid="92f95b20-10eb-4db9-8c6a-7e3d6cb5039c"/>
+				<textFieldExpression><![CDATA[$F{CHK_DATE}.charAt( 9 )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

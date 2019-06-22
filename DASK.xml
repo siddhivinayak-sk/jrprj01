@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>SKDS</name><driver>oracle.jdbc.driver.OracleDriver</driver><username>sandeep</username><password>sandeep</password><savePassword>true</savePassword><url>jdbc:oracle:thin:@//LP-5CD8328XHV.HCLT.CORP.HCL.IN:1521/xe</url><database></database><serverAddress></serverAddress><classpath>C:\sandeep\sandbox\Lib\ojdbc14.jar</classpath></jdbcDataAdapter>
